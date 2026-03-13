@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { BlockMath, InlineMath } from "react-katex";
 
 import { ClapTraceDemo } from "@/components/clap-trace-demo";
+import { ComputedClapExample } from "@/components/computed-clap-example";
 import { ResultsExplorer } from "@/components/results-explorer";
 import { SectionShell } from "@/components/section-shell";
 import { ShortestClapSearch } from "@/components/shortest-clap-search";
@@ -326,6 +327,7 @@ export function PaperWebsite({ synthetic, real, highlights }: PaperWebsiteProps)
             ))}
           </div>
           <div className="mt-8 space-y-8">
+            <ComputedClapExample />
             <ClapTraceDemo />
             <ShortestClapSearch />
           </div>
